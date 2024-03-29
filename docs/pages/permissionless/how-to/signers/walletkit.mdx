@@ -1,0 +1,27 @@
+import SmartAccounts from "./smartAccounts.mdx"
+
+# How to use a WalletKit signer with permissionless.js
+
+[WalletKit](https://walletkit.com/) is a popular embedded wallet provider that supports social logins and passkey.
+By combining permissionless.js with WalletKit, you can use WalletKit to enable a smooth social login experience, while using permissionless.js accounts as the smart wallets to sponsor gas for users, batch transactions, and more.
+
+## Setup
+
+To use WalletKit with permissionless.js, first create a project on [dashboard](https://app.walletkit.com/).
+
+- Refer to the [WalletKit documentation](https://docs.walletkit.com) for instructions on setting up a project with WalletKit.
+- For a quick start, Walletkit provides a guide, available [here](https://docs.walletkit.com/link/overview).
+
+## Integration
+Integrating permissionless.js with WalletKit is straightforward after setting up the project. WalletKit provides an Externally Owned Account (EOA) wallet to use as a signer with permissionless.js accounts.
+
+### Create the WalletKit provider
+After following the WalletKit installation, you will have access to a `walletKit` object as shown below that you can use to create a `SmartAccountSigner` object:
+
+```typescript
+// [!include ~/snippets/signers/walletkit.ts:main]
+```
+
+### Use with permissionless.js
+
+<SmartAccounts />

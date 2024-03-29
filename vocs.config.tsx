@@ -209,6 +209,7 @@ export const permissionlessSidebar = [
           { text: "How to use a DFNS signer", link: "/permissionless/how-to/signers/dfns" },
           { text: "How to use an Arcana Auth signer", link: "/permissionless/how-to/signers/arcana" },
           { text: "How to use a Particle Network signer", link: "/permissionless/how-to/signers/particle-network" },
+          { text: "How to use a WalletKit signer", link: "/permissionless/how-to/signers/walletkit" },
         ]
       }
     ]
